@@ -1,4 +1,3 @@
-
 // Chalenge: Define and use function in a new file 
 //
 // 1.Create a new file called notes.js
@@ -10,14 +9,6 @@
 const validator = require('validator')
 const yargs = require('yargs')
 const notes = require('./notes.js')
-
-//
-// Goal: Refactor all functions
-//
-// 1.If function is a method,use ES6 method definition syntax
-// 2.Otherwise,use most concise arrow function possible
-// 3.Test your work
-
 
  // Customize yargs veriosn
  yargs.version('1.1.0')
@@ -60,14 +51,6 @@ const notes = require('./notes.js')
     }
  })
 
-
- //
- // Goal: wire up list command
- // 1.Create and export listNotes from notes.js
- //   - Print note title for each one
- // 2.Call listNotes from command editor
- // 3.Test your work
-
  // Create list command
  yargs.command({
     command: 'list',
@@ -95,5 +78,4 @@ const notes = require('./notes.js')
 
  yargs.parse()
 
-//console.log(yargs.argv)
 
